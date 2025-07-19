@@ -1,0 +1,285 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(11, 11, 61);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 1.3rem;
+}
+
+/* Section Divider */
+main hr {
+    border: 0;
+    background-color: rgb(47, 13, 71);
+    height: 1px;
+    margin: 40px 84px;
+}
+
+/* First Section (Hero) */
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 140px 0;
+}
+
+.first-section>div {
+    width: 30%;
+}
+
+.left-section {
+    font-size: 1.5rem;
+}
+
+.left-section .buttons {
+    margin-top: 20px;
+}
+
+/* Hero Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 15px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #322d93;
+}
+
+/* Right Image Section */
+.right-section img {
+    width: 80%;
+}
+
+/* Text Highlights */
+.purple {
+    color: blueviolet;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.text-gray {
+    color: gray;
+}
+
+/* Second Section (Experience Timeline) */
+.second-section {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.second-section h1 {
+    font-size: 1.9rem;
+}
+
+.second-section .box {
+    background-color: white;
+    width: 87vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.second-section .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 110px;
+}
+
+/* Timeline Content */
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 80px;
+    width: 150px;
+    font-size: 11px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+/* ===== Footer Styles ===== */
+footer {
+    background-color: #0e0e1a;
+    color: #d3d3d3;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1 1 250px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #b88efb;
+    font-size: 18px;
+}
+
+.footer-column p {
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a,
+.footer-column .social-links a {
+    color: #d3d3d3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover,
+.footer-column .social-links a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    color: #888;
+}
+
+/* === Work Experience Grid Layout (No Scrollbar) === */
+.second-section {
+    max-width: 90vw;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.second-section h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.experience-card {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-icon {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.experience-card h3 {
+    color: #b88efb;
+    margin-bottom: 5px;
+}
+
+.date-range {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.experience-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cfcfcf;
+}

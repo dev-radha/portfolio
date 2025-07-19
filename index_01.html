@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha-Developer Portfolio</title>
+    <link rel="stylesheet" href="style_01.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Radha Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/"> Home</a></li>
+                    <li><a href="/"> About </a></li>
+                    <li><a href="/"> Services</a></li>
+                    <li><a href="/"> Projects </a></li>
+                    <li><a href="/"> Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="left-section">
+                <h3>Hello, It's Me</h3>
+                <h1 class="purple">Radha Gupta</h1>
+                <br>
+                <div>
+                    I'm a Web Designer with extensive experience of over 1 year. <br>
+                    My expertise is to create website designs, and I'm a <span id="element"></span>
+                </div>
+
+                <div class="buttons">
+                    <a href="#projects"><button class="btn">View Projects</button></a>
+                    <a href="#contact"><button class="btn">Contact Me</button></a>
+                </div>
+            </div>
+
+
+            <div class="right-section">
+                <img src="img/dev.jpg" alt="developer">
+            </div>
+        </section>
+
+        <hr>
+        <section class="second-section" id="experience">
+            <span class="text-gray">What I Have Done So Far</span>
+            <h1>Work Experience</h1>
+
+            <div class="experience-grid">
+
+                <!-- Experience Card -->
+                <div class="experience-card">
+                    <img src="img/devloper.png" alt="Web Developer" class="experience-icon">
+                    <h3>Web Developer</h3>
+                    <span class="date-range">1 year</span>
+                    <p>Built and maintained company websites using HTML, CSS, and JavaScript. Improved site speed and
+                        design.</p>
+                </div>
+
+                <div class="experience-card">
+                    <img src="img/html.png" alt="HTML Developer" class="experience-icon">
+                    <h3>HTML Developer</h3>
+                    <span class="date-range">2 Months</span>
+                    <p>Focused on semantic HTML and clean markup to improve SEO and accessibility for web platforms.</p>
+                </div>
+
+                <div class="experience-card">
+                    <img src="img/css.png" alt="CSS Developer" class="experience-icon">
+                    <h3>CSS Developer</h3>
+                    <span class="date-range">3 Months</span>
+                    <p>Created modern layouts with Flexbox & Grid. Styled UI components and built animations for
+                        engagement.</p>
+                </div>
+
+                <div class="experience-card">
+                    <img src="img/js.png" alt="JavaScript Developer" class="experience-icon">
+                    <h3>JavaScript Developer</h3>
+                    <span class="date-range">4 Months</span>
+                    <p>Developed dynamic front-end functionality, handled user interactions, and API integrations.</p>
+                </div>
+
+                <div class="experience-card">
+                    <img src="img/node js.png" alt="Node.js Developer" class="experience-icon">
+                    <h3>Node.js Developer</h3>
+                    <span class="date-range">4 Months</span>
+                    <p>Built backend REST APIs, database connections, and server-side logic using Node.js and Express.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- Column 1: About -->
+            <div class="footer-column">
+                <h3>Radha Gupta</h3>
+                <p>A passionate web designer & developer creating modern and responsive web experiences.</p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Follow Us -->
+            <div class="footer-column">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Radha Gupta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer.', 'Web Designer.', 'Video editiors.', 'Graphic Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
